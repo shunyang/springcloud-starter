@@ -8,9 +8,27 @@
     <artifactId>springcloud-starter</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.3.RELEASE</version>
+        <relativePath /> <!-- lookup parent from repository -->
+    </parent>
     <modules>
         <module>webtrace-spring-cloud-starter</module>
+        <module>tomcat-shutdown-spring-boot-starter</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

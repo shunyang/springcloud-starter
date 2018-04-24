@@ -1,0 +1,3 @@
+# starter介绍
+
+此starter为tomcat容易自动配置shutdown hooke的钩子的starter。
