@@ -17,6 +17,7 @@
     <modules>
         <module>webtrace-spring-cloud-starter</module>
         <module>tomcat-shutdown-spring-boot-starter</module>
+        <module>dependency-spring-cloud-starter</module>
     </modules>
 
     <dependencyManagement>
