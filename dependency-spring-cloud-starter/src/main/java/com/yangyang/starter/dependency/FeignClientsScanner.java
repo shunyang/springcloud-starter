@@ -138,7 +138,7 @@ public class FeignClientsScanner implements ImportBeanDefinitionRegistrar,
 					String name = getClientName(attributes, feignClientClass);
 					String[] interfaceNames = annotationMetadata.getInterfaceNames();
 					if (interfaceNames.length == 0){//没有继承任何接口
-						DependencyBean dependencyBean = makeDependencyBean(name,name);
+						DependencyBean dependencyBean = makeDependencyBean(name,annotationMetadata.getClassName());
 						dependencyBeans.add(dependencyBean);
 					}else{
 						for (String interfaceName : interfaceNames){
